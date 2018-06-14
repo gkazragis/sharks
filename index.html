@@ -54,8 +54,8 @@ switch (getOS()) {
 <!-- warning: playback does not work on iPad/iPhone if you include the poster attribute! fixed in iOS4.0                 -->
     
     <div>
-        <img src="snap.png" width="640" height="480" alt="snapshot">
-<video width="640" height="480" controls preload="none">
+<!--         <img src="snap.png" width="640" height="480" alt="snapshot"> -->
+<video width="640" height="480" controls preload="snap.png">
     <!-- mp4 must be first for iPad! -->
     <source src="sharks.mp4" type="video/mp4" /><!-- WebKit video    -->
     <source src="sharks.webm" type="video/webm" /><!-- Chrome / Newest versions of Firefox and Opera -->
@@ -71,8 +71,8 @@ switch (getOS()) {
     </object>
 </video>
 <!-- you *must* offer a download link as they may be able to play the file locally. customise this bit all you want -->
-<p> <strong>Download Video:</strong>
-     Format:  <a href="sharks.mp4">"mp4"</a>
+<p> <strong>Download Video</strong>
+     format: <a href="sharks.mp4">"mp4"</a>
 <!--     Open Format:    <a href="sharks.OGV">"OGG"</a> -->
 </p>
     </div>
