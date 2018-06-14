@@ -52,6 +52,9 @@ switch (getOS()) {
 
 <!-- first try HTML5 playback: if serving as XML, expand `controls` to `controls="controls"` and autoplay likewise       -->
 <!-- warning: playback does not work on iPad/iPhone if you include the poster attribute! fixed in iOS4.0                 -->
+    
+    <div>
+        <img src="snap.png" width="640" height="480" alt="snapshot">
 <video width="640" height="480" controls preload="none">
     <!-- mp4 must be first for iPad! -->
     <source src="sharks.mp4" type="video/mp4" /><!-- WebKit video    -->
@@ -69,9 +72,10 @@ switch (getOS()) {
 </video>
 <!-- you *must* offer a download link as they may be able to play the file locally. customise this bit all you want -->
 <p> <strong>Download Video:</strong>
-    Closed Format:  <a href="sharks.mp4">"mp4"</a>
-    Open Format:    <a href="sharks.OGV">"OGG"</a>
+     Format:  <a href="sharks.mp4">"mp4"</a>
+<!--     Open Format:    <a href="sharks.OGV">"OGG"</a> -->
 </p>
+    </div>
 
     <!-- 
     <object width="325" height="250" type="sharks/x-ms-asf" url="sharks.mp4"
