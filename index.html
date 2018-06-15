@@ -55,7 +55,7 @@ switch (getOS()) {
     
     <div>
         <img src="snap.png" width="640" height="480" alt="snapshot"> 
-<video width="640" height="480" controls preload="auto">
+<video width="640" height="360" controls preload="auto">
     <!-- mp4 must be first for iPad! -->
 <!--     https://drive.google.com/open?id=1aAoYKu4PVVVF3XwDAF1sczF9YBxirPtn -->
      <source src="https://drive.google.com/file/d/1aAoYKu4PVVVF3XwDAF1sczF9YBxirPtn"  /> 
@@ -63,12 +63,12 @@ switch (getOS()) {
     <source src="sharks.webm" type="video/webm" /><!-- Chrome / Newest versions of Firefox and Opera -->
     <source src="sharks.OGV" type="video/ogg" /><!-- Firefox / Opera -->
     <!-- fallback to Flash: -->
-    <object width="640" height="480" type="application/x-shockwave-flash" data="__FLASH__.SWF">
+    <object width="400" height="500" type="application/x-shockwave-flash" data="__FLASH__.SWF">
         <!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
         <param name="movie" value="__FLASH__.SWF" />
-<!--         <param name="flashvars" value="image=__POSTER__.JPG&amp;file=sharks.mp4" /> -->
+        <param name="flashvars" value="image=__POSTER__.JPG&amp;file=sharks.mp4" /> 
         <!-- fallback image. note the title field below, put the title of the video there -->
-        <img src="snap.png" width="640" height="480" alt="__TITLE__"
+        <img src="snap.png" width="640" height="360" alt="__TITLE__"
              title="No video playback capabilities, please download the video below" />
     </object>
 </video>
